@@ -6,68 +6,68 @@ const songsData = {
     {
       artist: "MOB D",
       song: "Bade tu Chal",
-      link: "https://open.spotify.com/track/1HpLaSa2uaQKfShxAkYtWj"
+      link: "https://open.spotify.com/track/1HpLaSa2uaQKfShxAkYtWj",
     },
     {
       artist: "J Trix",
       song: "Khayal",
-      link: "https://open.spotify.com/track/70Dr69JNzUcWV17WC21hJY"
+      link: "https://open.spotify.com/track/70Dr69JNzUcWV17WC21hJY",
     },
     {
       artist: "Rawal",
       song: "Baat Bangayi",
-      link: "https://open.spotify.com/track/0hnHxTlTDjYysw9mf5BgxA"
+      link: "https://open.spotify.com/track/0hnHxTlTDjYysw9mf5BgxA",
     },
     {
       artist: "Kaam Bhari",
       song: "Mohabbat",
-      link: "https://open.spotify.com/track/2cbTH0FqDD2wv9KBXuWjme"
-    }
+      link: "https://open.spotify.com/track/2cbTH0FqDD2wv9KBXuWjme",
+    },
   ],
   Singers: [
     {
       artist: "Ankur Tewari",
       song: "Tum Badal Gaye",
-      link: "https://open.spotify.com/track/1Dvcr61hD39MAMrN65eDMe"
+      link: "https://open.spotify.com/track/1Dvcr61hD39MAMrN65eDMe",
     },
     {
       artist: "Bawari Basanti",
       song: "Chalein Kahin",
-      link: "https://open.spotify.com/track/6FuRLbqyMlk0lugKxoH2qB"
+      link: "https://open.spotify.com/track/6FuRLbqyMlk0lugKxoH2qB",
     },
     {
       artist: "Namita Choudhary",
       song: "Chaap Tilak",
-      link: "https://open.spotify.com/track/0XCtRvfDHT98h0iUSDFtyO"
+      link: "https://open.spotify.com/track/0XCtRvfDHT98h0iUSDFtyO",
     },
     {
       artist: "Osho Jain",
       song: "Tu Aisa Kaise Hai",
-      link: "https://open.spotify.com/track/7eadaD2SBArRbebB9CP70X"
-    }
+      link: "https://open.spotify.com/track/7eadaD2SBArRbebB9CP70X",
+    },
   ],
   Bands: [
     {
       artist: "The Local Train",
       song: "Choo Lo",
-      link: "https://open.spotify.com/track/2qgXrzJsry4KgYoJCpuaul"
+      link: "https://open.spotify.com/track/2qgXrzJsry4KgYoJCpuaul",
     },
     {
       artist: "Nalayak",
       song: "Zakir",
-      link: "https://open.spotify.com/track/7bd6i95HUlQkNkTQClwcW5"
+      link: "https://open.spotify.com/track/7bd6i95HUlQkNkTQClwcW5",
     },
     {
       artist: "The Yellow Diary",
       song: "Roz Roz",
-      link: "https://open.spotify.com/track/6E6BCsQHXDAdXsrL7zV71N"
+      link: "https://open.spotify.com/track/6E6BCsQHXDAdXsrL7zV71N",
     },
     {
       artist: "When Chai Met Toast",
       song: "Khoj",
-      link: "https://open.spotify.com/track/4QK1qv4mgsfdWmMzp1Z3fx"
-    }
-  ]
+      link: "https://open.spotify.com/track/4QK1qv4mgsfdWmMzp1Z3fx",
+    },
+  ],
 };
 
 export default function App() {
@@ -104,7 +104,7 @@ export default function App() {
         })}
       </div>
       <div>
-        <ul>
+        <ul style={{ padding: "0" }}>
           {songsData[selectedGenre].map((artistsData, i) => (
             <li className="list list-non-bullet" key={artistsData.artist}>
               <a
@@ -116,7 +116,7 @@ export default function App() {
                 <div
                   style={{
                     backgroundColor:
-                      i % 2 === 0 ? "var(--secondary-color)" : "#fafafa"
+                      i % 2 === 0 ? "var(--secondary-color)" : "#fafafa",
                   }}
                   className="container"
                 >
