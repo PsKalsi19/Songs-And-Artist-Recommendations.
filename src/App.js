@@ -7,67 +7,79 @@ const songsData = {
       artist: "MOB D",
       song: "Bade tu Chal",
       link: "https://open.spotify.com/track/1HpLaSa2uaQKfShxAkYtWj",
+      rating: 4
     },
     {
       artist: "J Trix",
       song: "Khayal",
       link: "https://open.spotify.com/track/70Dr69JNzUcWV17WC21hJY",
+      rating: 3
     },
     {
       artist: "Rawal",
       song: "Baat Bangayi",
       link: "https://open.spotify.com/track/0hnHxTlTDjYysw9mf5BgxA",
+      rating: 5
     },
     {
       artist: "Kaam Bhari",
       song: "Mohabbat",
       link: "https://open.spotify.com/track/2cbTH0FqDD2wv9KBXuWjme",
-    },
+      rating: 5
+    }
   ],
   Singers: [
     {
       artist: "Ankur Tewari",
       song: "Tum Badal Gaye",
       link: "https://open.spotify.com/track/1Dvcr61hD39MAMrN65eDMe",
+      rating: 5
     },
     {
       artist: "Bawari Basanti",
       song: "Chalein Kahin",
       link: "https://open.spotify.com/track/6FuRLbqyMlk0lugKxoH2qB",
+      rating: 4
     },
     {
       artist: "Namita Choudhary",
       song: "Chaap Tilak",
       link: "https://open.spotify.com/track/0XCtRvfDHT98h0iUSDFtyO",
+      rating: 3
     },
     {
       artist: "Osho Jain",
       song: "Tu Aisa Kaise Hai",
       link: "https://open.spotify.com/track/7eadaD2SBArRbebB9CP70X",
-    },
+      rating: 2
+    }
   ],
   Bands: [
     {
       artist: "The Local Train",
       song: "Choo Lo",
       link: "https://open.spotify.com/track/2qgXrzJsry4KgYoJCpuaul",
+      rating: 4
     },
     {
       artist: "Nalayak",
       song: "Zakir",
       link: "https://open.spotify.com/track/7bd6i95HUlQkNkTQClwcW5",
+      rating: 2
     },
     {
       artist: "The Yellow Diary",
       song: "Roz Roz",
       link: "https://open.spotify.com/track/6E6BCsQHXDAdXsrL7zV71N",
+      rating: 3
     },
     {
       artist: "When Chai Met Toast",
       song: "Khoj",
       link: "https://open.spotify.com/track/4QK1qv4mgsfdWmMzp1Z3fx",
-    },
-  ],
+      rating: 5
+    }
+  ]
 };
 
 export default function App() {
@@ -104,7 +116,7 @@ export default function App() {
         })}
       </div>
       <div>
-        <ul style={{ padding: "0" }}>
+        <ul>
           {songsData[selectedGenre].map((artistsData, i) => (
             <li className="list list-non-bullet" key={artistsData.artist}>
               <a
@@ -116,7 +128,7 @@ export default function App() {
                 <div
                   style={{
                     backgroundColor:
-                      i % 2 === 0 ? "var(--secondary-color)" : "#fafafa",
+                      i % 2 === 0 ? "var(--secondary-color)" : "#fafafa"
                   }}
                   className="container"
                 >
@@ -128,6 +140,10 @@ export default function App() {
                     {" "}
                     <span className="key">Song -</span>
                     <span className="value">{artistsData.song}</span>{" "}
+                  </div>
+                  <div>
+                    <span className="key">Rating -</span>
+                    <span className="key">{artistsData.rating}/5</span>
                   </div>
                 </div>
               </a>
